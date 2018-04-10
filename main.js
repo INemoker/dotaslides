@@ -29,6 +29,12 @@ $(navi).on('click',function(){
     $(navi).addClass('red').siblings().removeClass()
 })
 
+let n=1
+setInterval(()=>{
+    $($buttons[n%4]).click()
+    console.log(n)
+    n++
+},2000)
 
 
 
